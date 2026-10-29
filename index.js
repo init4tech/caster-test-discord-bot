@@ -3,7 +3,7 @@
 const { Client, Events, GatewayIntentBits, SlashCommandBuilder } = require("discord.js");
 const os = require("node:os");
 
-const VERSION = "v1";
+const VERSION = "v2";
 const commands = [new SlashCommandBuilder().setName("ping").setDescription("Say which version of the bot answers").toJSON()];
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
